@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+			<form class="form__container">
+				<h1 class="title">GenPass</h1>
+
+				<div class="password__container">
+					<div class="password__text">lorem</div>
+					<button type='button' class="copy__btn">copy</button>
+				</div>
+
+				<div class="input__container">
+					<div class="settings">
+						<label for="length">Length</label>
+						<input
+							type="number"
+							name="length"
+							id="length"
+							min="6"
+							max="64"
+							value="10"
+						/>
+					</div>
+
+					<div class="settings">
+						<label for="uppercase">Uppercase</label>
+						<input
+							type="checkbox"
+							name="uppercase"
+							id="uppercase"
+							checked
+						/>
+					</div>
+
+					<div class="settings">
+						<label for="lowercase">Lowercase</label>
+						<input
+							type="checkbox"
+							name="lowercase"
+							id="lowercase"
+							checked
+						/>
+					</div>
+
+					<div class="settings">
+						<label for="numbers">Numbers</label>
+						<input
+							type="checkbox"
+							name="numbers"
+							id="numbers"
+							checked
+						/>
+					</div>
+
+					<div class="settings">
+						<label for="symbols"> Symbols </label>
+						<input
+							type="checkbox"
+							name="symbols"
+							id="symbols"
+							checked
+						/>
+					</div>
+				</div>
+
+				<button type="submit" class="generate__btn">Generate</button>
+			</form>
+		</div>
+
+		<script src="./index.js"></script>
+	</body>
+</html>
